@@ -1,0 +1,8 @@
+# Document Agent Requirements
+anthropic>=0.54.0
+logfire>=3.21.1
+python-dotenv>=1.0.0
+rich>=13.0.0  # For interactive console interface
+
+# Optional but recommended for full functionality
+# mcp>=1.9.4  # For MCP server connections (advanced feature)

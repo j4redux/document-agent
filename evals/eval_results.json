@@ -1,0 +1,241 @@
+{
+  "report": {
+    "summary": {
+      "total_tests": 8,
+      "successful": 8,
+      "failed": 0,
+      "success_rate": 1.0,
+      "average_duration_seconds": 9.406294226646423
+    },
+    "by_category": {
+      "calculation": 1.0,
+      "text": 1.0,
+      "file_ops": 1.0,
+      "complex": 1.0,
+      "document_creation": 1.0,
+      "research": 1.0,
+      "planning": 1.0
+    },
+    "tool_usage": {
+      "calculator": 2,
+      "text_transform": 2,
+      "file_write": 3,
+      "ls": 1,
+      "file_read": 2,
+      "todo_write": 2,
+      "bash": 1,
+      "weather": 1
+    },
+    "failures": []
+  },
+  "detailed_results": [
+    {
+      "test_case": {
+        "id": "calc_1",
+        "task": "What is 15 * 23?",
+        "expected_output": "345",
+        "expected_actions": [
+          "calculator"
+        ],
+        "category": "calculation",
+        "max_turns": 10
+      },
+      "success": true,
+      "actual_output": "345",
+      "tool_calls": [
+        {
+          "name": "calculator",
+          "input": {}
+        }
+      ],
+      "duration_seconds": 4.233227968215942,
+      "error": null,
+      "similarity_score": 1.0
+    },
+    {
+      "test_case": {
+        "id": "text_1",
+        "task": "Convert 'hello world' to uppercase",
+        "expected_output": "HELLO WORLD",
+        "expected_actions": [
+          "text_transform"
+        ],
+        "category": "text",
+        "max_turns": 10
+      },
+      "success": true,
+      "actual_output": "HELLO WORLD",
+      "tool_calls": [
+        {
+          "name": "text_transform",
+          "input": {}
+        }
+      ],
+      "duration_seconds": 3.9093430042266846,
+      "error": null,
+      "similarity_score": 1.0
+    },
+    {
+      "test_case": {
+        "id": "file_1",
+        "task": "Create a file called test_eval.txt with the content 'Evaluation test'",
+        "expected_output": null,
+        "expected_actions": [
+          "file_write"
+        ],
+        "category": "file_ops",
+        "max_turns": 10
+      },
+      "success": true,
+      "actual_output": "The file already contains the exact content you requested. No changes needed.",
+      "tool_calls": [
+        {
+          "name": "file_write",
+          "input": {}
+        },
+        {
+          "name": "ls",
+          "input": {}
+        },
+        {
+          "name": "file_read",
+          "input": {}
+        }
+      ],
+      "duration_seconds": 15.692227125167847,
+      "error": null,
+      "similarity_score": null
+    },
+    {
+      "test_case": {
+        "id": "complex_1",
+        "task": "Create a report with: 1) Calculate 50 * 30, 2) Save result to calc_result.txt, 3) Create a summary file report.md",
+        "expected_output": null,
+        "expected_actions": [
+          "todo_write"
+        ],
+        "category": "complex",
+        "max_turns": 15
+      },
+      "success": true,
+      "actual_output": "Tasks completed. Files created: calc_result.txt and report.md.",
+      "tool_calls": [
+        {
+          "name": "todo_write",
+          "input": {}
+        },
+        {
+          "name": "calculator",
+          "input": {}
+        },
+        {
+          "name": "file_write",
+          "input": {}
+        },
+        {
+          "name": "bash",
+          "input": {}
+        }
+      ],
+      "duration_seconds": 22.436956882476807,
+      "error": null,
+      "similarity_score": null
+    },
+    {
+      "test_case": {
+        "id": "doc_1",
+        "task": "Create a markdown file called summary.md with a brief 2-line summary about Python programming",
+        "expected_output": null,
+        "expected_actions": [
+          "file_write"
+        ],
+        "category": "document_creation",
+        "max_turns": 10
+      },
+      "success": true,
+      "actual_output": "Confirmed. The summary.md file has been created with a brief overview of Python programming.",
+      "tool_calls": [
+        {
+          "name": "file_write",
+          "input": {}
+        },
+        {
+          "name": "file_read",
+          "input": {}
+        }
+      ],
+      "duration_seconds": 12.062217950820923,
+      "error": null,
+      "similarity_score": null
+    },
+    {
+      "test_case": {
+        "id": "weather_1",
+        "task": "Check the weather in New York and tell me the temperature",
+        "expected_output": null,
+        "expected_actions": [
+          "weather"
+        ],
+        "category": "research",
+        "max_turns": 10
+      },
+      "success": true,
+      "actual_output": "The temperature in New York is 88\u00b0F (31\u00b0C), with stormy conditions.",
+      "tool_calls": [
+        {
+          "name": "weather",
+          "input": {}
+        }
+      ],
+      "duration_seconds": 5.489774942398071,
+      "error": null,
+      "similarity_score": null
+    },
+    {
+      "test_case": {
+        "id": "text_2",
+        "task": "Count the words in 'The quick brown fox jumps over the lazy dog'",
+        "expected_output": "9",
+        "expected_actions": [
+          "text_transform"
+        ],
+        "category": "text",
+        "max_turns": 10
+      },
+      "success": true,
+      "actual_output": "9",
+      "tool_calls": [
+        {
+          "name": "text_transform",
+          "input": {}
+        }
+      ],
+      "duration_seconds": 6.261104106903076,
+      "error": null,
+      "similarity_score": 1.0
+    },
+    {
+      "test_case": {
+        "id": "todo_1",
+        "task": "Create a todo list with these 3 items: analyze data, write summary, review results",
+        "expected_output": null,
+        "expected_actions": [
+          "todo_write"
+        ],
+        "category": "planning",
+        "max_turns": 10
+      },
+      "success": true,
+      "actual_output": "I've created the todo list with three items, all set to pending with medium priority. Would you like to proceed with working on these tasks?",
+      "tool_calls": [
+        {
+          "name": "todo_write",
+          "input": {}
+        }
+      ],
+      "duration_seconds": 5.165501832962036,
+      "error": null,
+      "similarity_score": null
+    }
+  ]
+}

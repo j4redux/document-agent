@@ -1,6 +1,6 @@
 # Document Agent
 
-A document agent built with Claude and Pydantic AI Observability that provides intelligent document editing, web research, file management, and task automation capabilities. Designed for developers, researchers, and content creators who need an intelligent assistant for complex document workflows.
+A document agent built with Claude and Pydantic Logfire Observability that provides intelligent document editing, web research, file management, and task automation capabilities. Designed for developers, researchers, and content creators who need an intelligent assistant for complex document workflows.
 
 ## Overview
 

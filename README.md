@@ -447,15 +447,6 @@ pytest tests/test_message_handling.py
 - Limit conversation history for long sessions
 - Use specific tools directly rather than general queries
 
-## Contributing
-
-Contributions are welcome! Areas for improvement:
-- Additional tool implementations
-- Enhanced error handling
-- Performance optimizations
-- Documentation improvements
-- Test coverage expansion
-
 ## License
 
 MIT License - see LICENSE file for details.
